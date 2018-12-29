@@ -1,2 +1,26 @@
-# Byzantine
-Implement the Om(n, m) algorithm for solving the Byzantine generals problem.
+拜占庭将军问题的口头消息算法 $Om(m)$ 的Python实现。 
+
+
+
+输入：
+
+-m [M] -g [G] -c [C]
+
+- M：递归层数
+
+- G：一个字符串，若第 $i$ 个字符为 $l$，表示该将军是忠诚的；或第 $i$ 个字符为 $t$，表示该将军是叛徒；
+
+- C：第0个将军作为指挥官的命令
+
+test.sh中有一些样例输入。
+
+
+
+交互一致性条件（Interactive Consistency Conditions）：
+
+- 所有忠诚的下属都遵守相同的命令
+- 如果指挥官是忠诚的，那么每个忠诚的下属都必须遵守他发出的命令
+
+
+
+test.sh中提供了一些测试，它们显示了具有不同参数的算法的成功。
